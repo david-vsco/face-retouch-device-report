@@ -1,39 +1,24 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta http-equiv="refresh" content="15"/>
-<title>Face retouch — live status</title>
-<style>
-body{font-family:system-ui,sans-serif;margin:1.5rem;background:#f6f3ee;color:#14212b}
-.card{background:#fff;border-radius:12px;padding:1rem 1.2rem;margin:1rem 0;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="refresh" content="15"/><title>Face retouch — live status</title>
+<style>body{font-family:system-ui,sans-serif;margin:1.5rem;background:#f6f3ee}
+.card{background:#fff;border-radius:12px;padding:1rem;margin:1rem 0}
 .badge{display:inline-block;background:#e8e0d4;border-radius:999px;padding:.15rem .55rem;font-size:.75rem;margin-right:.35rem}
-table{width:100%;border-collapse:collapse} td,th{text-align:left;padding:.4rem;border-bottom:1px solid #eee}
-.muted{color:#5c6b76} code{font-size:.9em}
-</style></head><body>
-<main style="max-width:720px;margin:0 auto">
-<p><span class="badge">LIVE</span><span class="badge">auto-refresh 15s</span></p>
-<h1>Face retouch PoC — what I’m doing</h1>
-<div class="card">
-<strong>Now</strong>
-<p>Xcode Preparing Emilia iPhone 8 / install FaceRetouchDeviceSmoke</p>
-<p class="muted"><strong>Next:</strong> RN studio-next Vision smoke on same phone → fill device Pages report</p>
-<p class="muted">Updated: 2026-09-19T17:13:04Z · machine: david-mac (david-mac)</p>
-</div>
-<div class="card">
-<strong>Checklist</strong>
-<table><thead><tr><th></th><th>Step</th><th>State</th></tr></thead><tbody>
-<tr><td>✅</td><td>Swift macOS Vision baseline (obama ~226)</td><td><code>done</code></td></tr>
+table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:.4rem;border-bottom:1px solid #eee}
+.muted{color:#5c6b76}</style></head><body><main style="max-width:720px;margin:0 auto">
+<p><span class="badge">LIVE</span><span class="badge">15s refresh</span></p>
+<h1>Face retouch — what I’m doing</h1>
+<div class="card"><strong>Now</strong><p>Swift FaceRetouchDeviceSmoke installed; launching + pulling Documents</p>
+<p class="muted"><strong>Next:</strong> RN/studio-next Vision on same phone</p>
+<p class="muted">Updated 2026-09-19T17:13:30Z · david-mac</p></div>
+<div class="card"><strong>Checklist</strong><table><tr><td>✅</td><td>Swift macOS Vision baseline (obama ~226)</td><td><code>done</code></td></tr>
 <tr><td>✅</td><td>Build signed FaceRetouchDeviceSmoke</td><td><code>done</code></td></tr>
 <tr><td>✅</td><td>Developer Mode on iPhone 8</td><td><code>done</code></td></tr>
-<tr><td>🔄</td><td>Xcode finish Preparing device</td><td><code>doing</code></td></tr>
-<tr><td>⬜</td><td>Install + run Swift Vision on device</td><td><code>todo</code></td></tr>
+<tr><td>✅</td><td>Xcode finish Preparing device</td><td><code>done</code></td></tr>
+<tr><td>🔄</td><td>Install + run Swift Vision on device</td><td><code>doing</code></td></tr>
 <tr><td>⬜</td><td>Install + run RN/studio-next Vision on device</td><td><code>todo</code></td></tr>
 <tr><td>⬜</td><td>Publish physical-device GitHub Pages report</td><td><code>todo</code></td></tr>
-
-</tbody></table>
-</div>
-<div class="card muted">
-<p>Also on the Mac fleet dashboard (LT-2213): <code>http://127.0.0.1:8787/</code> when you’re on that machine / Tailscale.</p>
-<p>Sim compare report: <a href="https://david-vsco.github.io/face-retouch-poc-report/">face-retouch-poc-report</a></p>
-</div>
+</table></div>
+<div class="card muted"><p>Fleet dash on david-mac: <code>http://127.0.0.1:8787/</code></p>
+<p>Main device report: <a href="./">index</a></p></div>
 </main></body></html>
