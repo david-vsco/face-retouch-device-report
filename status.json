@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "fb7b099a-93bc-447d-97f3-db9378fe804e",
+  "agent_name": "TEMP face retouch PoC",
+  "summary": "iPhone 8 Vision: Swift install then RN",
+  "status": "running",
+  "machine": "david-mac",
+  "machine_kind": "user-mac",
+  "host": "david-mac",
+  "vm_name": null,
+  "repo": "vsco/studio-next",
+  "branch": "poc/face-retouch-landmarker-compare",
+  "tickets": [],
+  "urls": {
+    "device_report": "https://david-vsco.github.io/face-retouch-device-report/",
+    "sim_report": "https://david-vsco.github.io/face-retouch-poc-report/"
+  },
+  "detail": "Doing now: wait Xcode Preparing / install Swift smoke. Next: RN studio-next on same phone. Then device GH Pages.",
+  "started_at": "2026-09-19T16:28:59Z",
+  "updated_at": "2026-09-19T17:13:04Z",
+  "goal": "Physical iPhone 8: Swift Vision app + RN/studio-next Vision app + device Pages report",
+  "live": {
+    "doing_now": "Xcode Preparing Emilia iPhone 8 / install FaceRetouchDeviceSmoke",
+    "next_up": "RN studio-next Vision smoke on same phone \u2192 fill device Pages report",
+    "step": "device-prepare-install"
+  },
+  "checklist": [
+    {
+      "id": "macos_cli",
+      "label": "Swift macOS Vision baseline (obama ~226)",
+      "state": "done"
+    },
+    {
+      "id": "swift_app_build",
+      "label": "Build signed FaceRetouchDeviceSmoke",
+      "state": "done"
+    },
+    {
+      "id": "devmode",
+      "label": "Developer Mode on iPhone 8",
+      "state": "done"
+    },
+    {
+      "id": "xcode_prepare",
+      "label": "Xcode finish Preparing device",
+      "state": "doing"
+    },
+    {
+      "id": "swift_install",
+      "label": "Install + run Swift Vision on device",
+      "state": "todo"
+    },
+    {
+      "id": "rn_install",
+      "label": "Install + run RN/studio-next Vision on device",
+      "state": "todo"
+    },
+    {
+      "id": "device_pages",
+      "label": "Publish physical-device GitHub Pages report",
+      "state": "todo"
+    }
+  ]
+}
