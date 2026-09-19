@@ -16,19 +16,20 @@ table{width:100%;border-collapse:collapse} td,th{text-align:left;padding:.4rem;b
 <h1>Face retouch — physical iPhone</h1>
 <div class="card">
 <strong>Now</strong>
-<p>Swift FaceRetouchDeviceSmoke is installed on Emilia’s iPhone 8 (USB). No Documents artifacts yet — app needs to open once on the phone (Trust developer if prompted). Pulling AFC/Documents next.</p>
-<p class="muted"><strong>Next:</strong> Read face_width from device report.json → build/run RN studio-next Vision on same phone → fill results on this Pages site</p>
-<p class="muted">Updated <code>2026-09-19T17:19:06Z</code> · machine <code>david-mac</code></p>
+<p>Swift Vision smoke app is installed on the test iPhone 8 (USB). Waiting for the app to open once on device so Documents artifacts can be pulled. Then RN/studio-next Vision on the same phone.</p>
+<p class="muted"><strong>Next:</strong> Read device face_width → RN Vision run → publish metrics/strips on this site</p>
+<p class="muted">Updated <code>2026-09-19T17:34:33Z</code></p>
 </div>
 <div class="card warn">
-<strong>Action on phone (if not done)</strong>
-<p>Open <strong>FaceRetouchDeviceSmoke</strong>. If iOS blocks it: Settings → General → VPN &amp; Device Management → trust the developer, then open again.</p>
+<strong>On-device step</strong>
+<p>Open <strong>FaceRetouchDeviceSmoke</strong> on the test iPhone 8. If iOS blocks it: Settings → General → VPN &amp; Device Management → trust the developer, then open again.</p>
 </div>
 <div class="card">
 <strong>Checklist</strong>
-<table><tbody><tr><td>✅</td><td>Swift macOS Vision baseline (obama ~226)</td><td><code>done</code></td></tr>
+<table><tbody>
+<tr><td>✅</td><td>Swift macOS Vision baseline</td><td><code>done</code></td></tr>
 <tr><td>✅</td><td>Build signed FaceRetouchDeviceSmoke</td><td><code>done</code></td></tr>
-<tr><td>✅</td><td>Developer Mode on iPhone 8</td><td><code>done</code></td></tr>
+<tr><td>✅</td><td>Developer Mode on test iPhone 8</td><td><code>done</code></td></tr>
 <tr><td>✅</td><td>Install Swift Vision app on device</td><td><code>done</code></td></tr>
 <tr><td>🔄</td><td>Open app + pull Documents (face_width)</td><td><code>doing</code></td></tr>
 <tr><td>⬜</td><td>Install + run RN/studio-next Vision on device</td><td><code>todo</code></td></tr>

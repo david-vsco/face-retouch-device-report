@@ -10,7 +10,7 @@
   "updated_at": "2026-09-19T17:19:06Z",
   "goal": "Physical iPhone 8: Swift Vision + RN Vision + device Pages results",
   "live": {
-    "doing_now": "Swift FaceRetouchDeviceSmoke is installed on Emilia\u2019s iPhone 8 (USB). No Documents artifacts yet \u2014 app needs to open once on the phone (Trust developer if prompted). Pulling AFC/Documents next.",
+    "doing_now": "Swift FaceRetouchDeviceSmoke is installed on test iPhone 88 (USB). No Documents artifacts yet \u2014 app needs to open once on the phone (Trust developer if prompted). Pulling AFC/Documents next.",
     "next_up": "Read face_width from device report.json \u2192 build/run RN studio-next Vision on same phone \u2192 fill results on this Pages site",
     "step": "await-swift-open-pull"
   },
@@ -53,7 +53,6 @@
   ],
   "urls": {
     "live": "https://david-vsco.github.io/face-retouch-device-report/live.html",
-    "index": "https://david-vsco.github.io/face-retouch-device-report/",
-    "fleet_phone": "http://100.76.192.61:8787/"
+    "index": "https://david-vsco.github.io/face-retouch-device-report/"
   }
 }
