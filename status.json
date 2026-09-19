@@ -2,27 +2,26 @@
   "schema": 1,
   "id": "fb7b099a-93bc-447d-97f3-db9378fe804e",
   "agent_name": "TEMP face retouch PoC",
-  "summary": "iPhone 8: Swift installed \u2014 launching Vision smoke",
+  "summary": "iPhone 8: Swift installed \u2014 waiting tap/Trust then pull; RN next",
   "status": "running",
   "machine": "david-mac",
   "machine_kind": "user-mac",
   "host": "david-mac",
-  "vm_name": null,
   "repo": "vsco/studio-next",
   "branch": "poc/face-retouch-landmarker-compare",
   "tickets": [],
   "urls": {
+    "live": "https://david-vsco.github.io/face-retouch-device-report/live.html",
     "device_report": "https://david-vsco.github.io/face-retouch-device-report/",
-    "sim_report": "https://david-vsco.github.io/face-retouch-poc-report/"
+    "fleet_phone": "http://100.76.192.61:8787/",
+    "fleet_phone_dns": "http://fleet-phone.tail439e9f.ts.net:8787/"
   },
-  "detail": "Swift app Install Complete on Emilia iPhone 8; launching Vision smoke",
-  "started_at": "2026-09-19T16:28:59Z",
-  "updated_at": "2026-09-19T17:13:30Z",
-  "goal": "Physical iPhone 8: Swift Vision app + RN/studio-next Vision app + device Pages report",
+  "detail": "Swift FaceRetouchDeviceSmoke installed on Emilia iPhone 8. Need user tap/Trust; then Documents pull + RN.",
+  "goal": "Physical iPhone 8: Swift Vision + RN/studio-next Vision + device Pages report",
   "live": {
-    "doing_now": "Swift FaceRetouchDeviceSmoke installed; launching + pulling Documents",
-    "next_up": "RN/studio-next Vision on same phone",
-    "step": "swift-launch-pull"
+    "doing_now": "Swift app installed \u2014 waiting for on-phone open/Trust so Documents smoke results appear",
+    "next_up": "Pull report.json (face_width) \u2192 RN/studio-next Vision on same phone \u2192 fill device Pages",
+    "step": "await-swift-tap"
   },
   "checklist": [
     {
@@ -47,7 +46,12 @@
     },
     {
       "id": "swift_install",
-      "label": "Install + run Swift Vision on device",
+      "label": "Install Swift Vision app on device",
+      "state": "done"
+    },
+    {
+      "id": "swift_run",
+      "label": "Run Swift Vision smoke + pull Documents",
       "state": "doing"
     },
     {
@@ -57,8 +61,10 @@
     },
     {
       "id": "device_pages",
-      "label": "Publish physical-device GitHub Pages report",
+      "label": "Publish physical-device GitHub Pages results",
       "state": "todo"
     }
-  ]
+  ],
+  "started_at": "2026-09-19T16:30:00Z",
+  "updated_at": "2026-09-19T17:16:39Z"
 }
