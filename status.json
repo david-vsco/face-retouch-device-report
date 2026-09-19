@@ -2,26 +2,17 @@
   "schema": 1,
   "id": "fb7b099a-93bc-447d-97f3-db9378fe804e",
   "agent_name": "TEMP face retouch PoC",
-  "summary": "iPhone 8: Swift installed \u2014 waiting tap/Trust then pull; RN next",
+  "summary": "iPhone 8: Swift app installed \u2014 awaiting on-device open so Documents fill",
   "status": "running",
   "machine": "david-mac",
   "machine_kind": "user-mac",
   "host": "david-mac",
-  "repo": "vsco/studio-next",
-  "branch": "poc/face-retouch-landmarker-compare",
-  "tickets": [],
-  "urls": {
-    "live": "https://david-vsco.github.io/face-retouch-device-report/live.html",
-    "device_report": "https://david-vsco.github.io/face-retouch-device-report/",
-    "fleet_phone": "http://100.76.192.61:8787/",
-    "fleet_phone_dns": "http://fleet-phone.tail439e9f.ts.net:8787/"
-  },
-  "detail": "Swift FaceRetouchDeviceSmoke installed on Emilia iPhone 8. Need user tap/Trust; then Documents pull + RN.",
-  "goal": "Physical iPhone 8: Swift Vision + RN/studio-next Vision + device Pages report",
+  "updated_at": "2026-09-19T17:19:06Z",
+  "goal": "Physical iPhone 8: Swift Vision + RN Vision + device Pages results",
   "live": {
-    "doing_now": "Swift app installed \u2014 waiting for on-phone open/Trust so Documents smoke results appear",
-    "next_up": "Pull report.json (face_width) \u2192 RN/studio-next Vision on same phone \u2192 fill device Pages",
-    "step": "await-swift-tap"
+    "doing_now": "Swift FaceRetouchDeviceSmoke is installed on Emilia\u2019s iPhone 8 (USB). No Documents artifacts yet \u2014 app needs to open once on the phone (Trust developer if prompted). Pulling AFC/Documents next.",
+    "next_up": "Read face_width from device report.json \u2192 build/run RN studio-next Vision on same phone \u2192 fill results on this Pages site",
+    "step": "await-swift-open-pull"
   },
   "checklist": [
     {
@@ -40,18 +31,13 @@
       "state": "done"
     },
     {
-      "id": "xcode_prepare",
-      "label": "Xcode finish Preparing device",
-      "state": "done"
-    },
-    {
       "id": "swift_install",
       "label": "Install Swift Vision app on device",
       "state": "done"
     },
     {
       "id": "swift_run",
-      "label": "Run Swift Vision smoke + pull Documents",
+      "label": "Open app + pull Documents (face_width)",
       "state": "doing"
     },
     {
@@ -61,10 +47,13 @@
     },
     {
       "id": "device_pages",
-      "label": "Publish physical-device GitHub Pages results",
+      "label": "Publish physical-device metrics/strips on this site",
       "state": "todo"
     }
   ],
-  "started_at": "2026-09-19T16:30:00Z",
-  "updated_at": "2026-09-19T17:16:39Z"
+  "urls": {
+    "live": "https://david-vsco.github.io/face-retouch-device-report/live.html",
+    "index": "https://david-vsco.github.io/face-retouch-device-report/",
+    "fleet_phone": "http://100.76.192.61:8787/"
+  }
 }
