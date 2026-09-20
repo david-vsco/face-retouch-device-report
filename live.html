@@ -1,39 +1,29 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta http-equiv="refresh" content="10"/>
+<meta http-equiv="refresh" content="15"/>
 <title>Face retouch — live status</title>
 <style>
 body{font-family:system-ui,sans-serif;margin:1.25rem;background:#f6f3ee;color:#14212b;line-height:1.45}
 .card{background:#fff;border-radius:12px;padding:1rem 1.15rem;margin:1rem 0;box-shadow:0 1px 2px rgba(0,0,0,.06)}
 .badge{display:inline-block;background:#e8e0d4;border-radius:999px;padding:.15rem .55rem;font-size:.75rem;margin-right:.35rem}
-.warn{background:#fff6e8;border:1px solid #f0d9a8}
+.ok{background:#e8f6ee;border:1px solid #b7e0c4}
 table{width:100%;border-collapse:collapse} td,th{text-align:left;padding:.4rem;border-bottom:1px solid #eee}
 .muted{color:#5c6b76;font-size:.95rem}
 </style></head><body>
 <main style="max-width:720px;margin:0 auto">
-<p><span class="badge">LIVE</span><span class="badge">refresh 10s</span><span class="badge">canonical dashboard</span></p>
+<p><span class="badge">LIVE</span><span class="badge">overnight</span><span class="badge">15s refresh</span></p>
 <h1>Face retouch — physical iPhone</h1>
-<div class="card">
-<strong>Now</strong>
-<p>Swift Vision smoke app is installed on the test iPhone 8 (USB). Waiting for the app to open once on device so Documents artifacts can be pulled. Then RN/studio-next Vision on the same phone.</p>
-<p class="muted"><strong>Next:</strong> Read device face_width → RN Vision run → publish metrics/strips on this site</p>
-<p class="muted">Updated <code>2026-09-19T17:34:33Z</code></p>
-</div>
-<div class="card warn">
-<strong>On-device step</strong>
-<p>Open <strong>FaceRetouchDeviceSmoke</strong> on the test iPhone 8. If iOS blocks it: Settings → General → VPN &amp; Device Management → trust the developer, then open again.</p>
-</div>
-<div class="card">
-<strong>Checklist</strong>
-<table><tbody>
-<tr><td>✅</td><td>Swift macOS Vision baseline</td><td><code>done</code></td></tr>
-<tr><td>✅</td><td>Build signed FaceRetouchDeviceSmoke</td><td><code>done</code></td></tr>
-<tr><td>✅</td><td>Developer Mode on test iPhone 8</td><td><code>done</code></td></tr>
-<tr><td>✅</td><td>Install Swift Vision app on device</td><td><code>done</code></td></tr>
-<tr><td>🔄</td><td>Open app + pull Documents (face_width)</td><td><code>doing</code></td></tr>
-<tr><td>⬜</td><td>Install + run RN/studio-next Vision on device</td><td><code>todo</code></td></tr>
-<tr><td>⬜</td><td>Publish physical-device metrics/strips on this site</td><td><code>todo</code></td></tr>
-</tbody></table>
-</div>
+<div class="card ok"><strong>Swift device result</strong>
+<p>Vision on physical test iPhone 8: <strong>face_width ≈ 225.8</strong> (Python ~226; simulator quirk was ~73). PASS.</p></div>
+<div class="card"><strong>Now</strong><p>Overnight run started: Swift on-device Vision PASS (face_width ~225.8). Publishing device Pages assets, then building RN/studio-next Vision for the test iPhone 8.</p>
+<p class="muted"><strong>Next:</strong> Install studio-next Debug → Vision smoke → pull Documents → fill Pages report</p>
+<p class="muted">Updated <code>2026-09-20T04:40:02Z</code></p></div>
+<div class="card"><strong>Checklist</strong><table><tbody><tr><td>✅</td><td>Swift macOS Vision baseline</td><td><code>done</code></td></tr>
+<tr><td>✅</td><td>Swift Vision on physical iPhone 8 (face_width ~226)</td><td><code>done</code></td></tr>
+<tr><td>🔄</td><td>Publish Swift device metrics/strips on Pages</td><td><code>doing</code></td></tr>
+<tr><td>⬜</td><td>Build studio-next Debug for device</td><td><code>todo</code></td></tr>
+<tr><td>⬜</td><td>RN/studio-next Vision on device + pull</td><td><code>todo</code></td></tr>
+<tr><td>⬜</td><td>Final device Pages report</td><td><code>todo</code></td></tr>
+</tbody></table></div>
 </main></body></html>
