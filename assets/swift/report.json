@@ -1,42 +1,36 @@
 {
-  "artifacts": {
-    "before": "assets/swift/before.png",
-    "mask_vision": "assets/swift/mask_vision.png",
-    "python": "assets/swift/python.png",
-    "strip": "assets/swift/strip.png",
-    "vision": "assets/swift/vision.png"
+  "artifacts" : {
+    "before" : "\/var\/mobile\/Containers\/Data\/Application\/4A183710-A6B4-4096-84BC-8963932E1402\/Documents\/face-retouch-device-smoke\/obama\/before.png",
+    "mask_vision" : "\/var\/mobile\/Containers\/Data\/Application\/4A183710-A6B4-4096-84BC-8963932E1402\/Documents\/face-retouch-device-smoke\/obama\/mask_vision.png",
+    "python" : "\/var\/mobile\/Containers\/Data\/Application\/4A183710-A6B4-4096-84BC-8963932E1402\/Documents\/face-retouch-device-smoke\/obama\/python.png",
+    "strip" : "\/var\/mobile\/Containers\/Data\/Application\/4A183710-A6B4-4096-84BC-8963932E1402\/Documents\/face-retouch-device-smoke\/obama\/strip.png",
+    "vision" : "\/var\/mobile\/Containers\/Data\/Application\/4A183710-A6B4-4096-84BC-8963932E1402\/Documents\/face-retouch-device-smoke\/obama\/vision.png"
   },
-  "reports": {
-    "vision": {
-      "detect_ms": 432.7,
-      "device": "test-iphone-8",
-      "diff_vs_python_golden": {
-        "max_abs_u8": 55,
-        "mean_abs_u8": 0.0889,
-        "pixels": 1151040
+  "reports" : {
+    "vision" : {
+      "detect_ms" : 432.69999999999999,
+      "device" : "iphone8-physical",
+      "diff_vs_python_golden" : {
+        "max_abs_u8" : 55,
+        "mean_abs_u8" : 0.088900000000000007,
+        "pixels" : 1151040
       },
-      "face_width_px_min": 225.76803627259983,
-      "faces": 1,
-      "guided_eps": 0.004000000189989805,
-      "guided_radius": 4,
-      "landmarker": "vision",
-      "mask_refined_px": 43937,
-      "smooth": 0.6000000238418579,
-      "texture_retain": 0.800000011920929,
-      "timings_ms": {
-        "base_smoothed": 28889.7,
-        "frequency_separation": 25845.4,
-        "mask_coarse": 179.8,
-        "mask_refined": 12197.3,
-        "recombine": 1526.8
+      "face_width_px_min" : 225.76803627259983,
+      "faces" : 1,
+      "guided_eps" : 0.0040000001899898052,
+      "guided_radius" : 4,
+      "landmarker" : "vision",
+      "mask_refined_px" : 43937,
+      "smooth" : 0.60000002384185791,
+      "texture_retain" : 0.80000001192092896,
+      "timings_ms" : {
+        "base_smoothed" : 28889.700000000001,
+        "frequency_separation" : 25845.400000000001,
+        "mask_coarse" : 179.80000000000001,
+        "mask_refined" : 12197.299999999999,
+        "recombine" : 1526.8
       },
-      "total_ms": 68639,
-      "sample": "obama"
+      "total_ms" : 68639
     }
-  },
-  "meta": {
-    "label": "Swift Vision on test iPhone 8 (USB)",
-    "landmarker": "vision",
-    "no_mediapipe": true
   }
 }
