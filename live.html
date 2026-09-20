@@ -1,22 +1,9 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta http-equiv="refresh" content="15"/>
-<title>Face retouch — live status</title>
-<style>
-body{font-family:system-ui,sans-serif;margin:1.25rem;background:#f6f3ee;color:#14212b;line-height:1.45}
-.card{background:#fff;border-radius:12px;padding:1rem 1.15rem;margin:1rem 0;box-shadow:0 1px 2px rgba(0,0,0,.06)}
-.badge{display:inline-block;background:#e8e0d4;border-radius:999px;padding:.15rem .55rem;font-size:.75rem;margin-right:.35rem}
-.ok{background:#e8f6ee;border:1px solid #b7e0c4}
-.bad{background:#fdeeee;border:1px solid #e8b4b4}
-.muted{color:#5c6b76}
-</style></head><body>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="refresh" content="30"/><title>Face retouch — live</title>
+<style>body{font-family:system-ui;margin:1.25rem;background:#f6f3ee} .card{background:#fff;border-radius:12px;padding:1rem;margin:1rem 0} .ok{background:#e8f6ee} .bad{background:#fdeceb}</style></head><body>
 <main style="max-width:720px;margin:0 auto">
-<p><span class="badge">LIVE</span><span class="badge">overnight</span></p>
-<h1>Face retouch — physical iPhone</h1>
-<div class="card ok"><strong>Swift device — DONE</strong><p>face_width ≈ 225.77 PASS.</p></div>
-<div class="card bad"><strong>BLOCKER — NO_REPORT (stopped)</strong>
-<p>studio-next Debug build+install OK on RESUME2, but RN smoke never wrote <code>report.json</code> after ~20 min wait (Documents only had inputs). Overnight watch ended (rc=7). May need manual open / Trust / smoke re-trigger.</p>
-<p class="muted">Updated 2026-09-20T05:46:20Z</p>
-<p><a href="index.html">index.html</a></p></div>
+<p>LIVE · unattended</p>
+<div class="card ok"><strong>Swift PASS</strong> face_width ≈ 225.8</div>
+<div class="card bad"><strong>RN still NO_REPORT</strong> after becomeActive+30s smoke path. Updated 2026-09-20T16:03:45Z</div>
 </main></body></html>
