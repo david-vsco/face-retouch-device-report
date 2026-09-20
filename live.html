@@ -1,30 +1,22 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta http-equiv="refresh" content="20"/>
+<meta http-equiv="refresh" content="15"/>
 <title>Face retouch — live status</title>
 <style>
 body{font-family:system-ui,sans-serif;margin:1.25rem;background:#f6f3ee;color:#14212b;line-height:1.45}
 .card{background:#fff;border-radius:12px;padding:1rem 1.15rem;margin:1rem 0;box-shadow:0 1px 2px rgba(0,0,0,.06)}
 .badge{display:inline-block;background:#e8e0d4;border-radius:999px;padding:.15rem .55rem;font-size:.75rem;margin-right:.35rem}
 .ok{background:#e8f6ee;border:1px solid #b7e0c4}
-.muted{color:#5c6b76;font-size:.95rem}
-table{width:100%;border-collapse:collapse} td{padding:.4rem;border-bottom:1px solid #eee}
+.bad{background:#fdeeee;border:1px solid #e8b4b4}
+.muted{color:#5c6b76}
 </style></head><body>
 <main style="max-width:720px;margin:0 auto">
-<p><span class="badge">LIVE</span><span class="badge">overnight unattended</span></p>
+<p><span class="badge">LIVE</span><span class="badge">overnight</span></p>
 <h1>Face retouch — physical iPhone</h1>
-<div class="card ok"><strong>Swift device PASS</strong> · face_width ≈ 225.8
-<p><img src="assets/swift/strip.png" alt="Swift strip" style="max-width:100%"/></p></div>
-<div class="card ok"><strong>studio-next Debug previously installed</strong></div>
-<div class="card"><strong>Now</strong>
-<p>Rebuilding with smoke deferred off launch (watchdog fix), then reinstall + Vision smoke.</p>
-<p class="muted">Updated <code>2026-09-20T05:17:38Z</code></p></div>
-<div class="card"><strong>Checklist</strong>
-<table>
-<tr><td>✅</td><td>Swift device Vision</td></tr>
-<tr><td>✅</td><td>Symbols for auto-launch</td></tr>
-<tr><td>🔄</td><td>Rebuild (deferred smoke) → install → RN report</td></tr>
-<tr><td>⬜</td><td>Final Pages + standup</td></tr>
-</table></div>
+<div class="card ok"><strong>Swift device — DONE</strong><p>face_width ≈ 225.77 PASS.</p></div>
+<div class="card bad"><strong>BLOCKER — NO_REPORT (stopped)</strong>
+<p>studio-next Debug build+install OK on RESUME2, but RN smoke never wrote <code>report.json</code> after ~20 min wait (Documents only had inputs). Overnight watch ended (rc=7). May need manual open / Trust / smoke re-trigger.</p>
+<p class="muted">Updated 2026-09-20T05:46:20Z</p>
+<p><a href="index.html">index.html</a></p></div>
 </main></body></html>
