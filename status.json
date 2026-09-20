@@ -2,17 +2,17 @@
   "schema": 1,
   "id": "fb7b099a-93bc-447d-97f3-db9378fe804e",
   "agent_name": "TEMP face retouch PoC",
-  "summary": "iPhone 8: Swift app installed \u2014 awaiting on-device open so Documents fill",
-  "status": "running",
+  "summary": "Swift device PASS ~225.77 published; RN blocked \u2014 executor has no Mac Shell (parent must run overnight MAC script)",
+  "status": "blocked",
   "machine": "david-mac",
   "machine_kind": "user-mac",
   "host": "david-mac",
-  "updated_at": "2026-09-19T17:19:06Z",
-  "goal": "Physical iPhone 8: Swift Vision + RN Vision + device Pages results",
+  "updated_at": "2026-09-20T04:41:00Z",
+  "goal": "Physical test iPhone 8: Swift Vision + RN Vision + device Pages results",
   "live": {
-    "doing_now": "Swift FaceRetouchDeviceSmoke is installed on test iPhone 88 (USB). No Documents artifacts yet \u2014 app needs to open once on the phone (Trust developer if prompted). Pulling AFC/Documents next.",
-    "next_up": "Read face_width from device report.json \u2192 build/run RN studio-next Vision on same phone \u2192 fill results on this Pages site",
-    "step": "await-swift-open-pull"
+    "doing_now": "Swift published on Pages. RN path blocked: Linux executor cannot use machineId. Parent must run face-retouch-overnight-MAC.sh on LT-2213.",
+    "next_up": "Parent: caffeinate + RN build/install/launch/pull on test iPhone 8 \u2192 publish RN assets \u2192 clear fleet",
+    "step": "blocked-executor-no-mac-shell"
   },
   "checklist": [
     {
@@ -27,7 +27,7 @@
     },
     {
       "id": "devmode",
-      "label": "Developer Mode on iPhone 8",
+      "label": "Developer Mode on test iPhone 8",
       "state": "done"
     },
     {
@@ -37,22 +37,31 @@
     },
     {
       "id": "swift_run",
-      "label": "Open app + pull Documents (face_width)",
-      "state": "doing"
+      "label": "Open app + pull Documents (face_width ~225.77)",
+      "state": "done"
+    },
+    {
+      "id": "swift_pages",
+      "label": "Publish Swift metrics/mask on Pages",
+      "state": "done"
     },
     {
       "id": "rn_install",
       "label": "Install + run RN/studio-next Vision on device",
-      "state": "todo"
+      "state": "blocked"
     },
     {
       "id": "device_pages",
       "label": "Publish physical-device metrics/strips on this site",
-      "state": "todo"
+      "state": "doing"
     }
   ],
   "urls": {
     "live": "https://david-vsco.github.io/face-retouch-device-report/live.html",
     "index": "https://david-vsco.github.io/face-retouch-device-report/"
+  },
+  "blocker": {
+    "code": "no-mac-shell-on-executor",
+    "detail": "Executor Shell is Linux-only; machineId a7c3994b-8339-41a7-b4cc-23cafa2c3d75 not available to this subagent. Run /workspace/face-retouch-overnight-MAC.sh via parent Shell with that machineId."
   }
 }

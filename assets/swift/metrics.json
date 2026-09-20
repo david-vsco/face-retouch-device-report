@@ -1,0 +1,13 @@
+{
+  "sample": "obama",
+  "python_face_width_px_min": 225.6,
+  "macos_cli_vision_face_width_px_min": 226.07,
+  "device_swift_vision_face_width_px_min": 225.77,
+  "device_swift_faces": 1,
+  "device_swift_detect_ms": 432.7,
+  "device_swift_total_ms": 68639,
+  "device_swift_diff_mean_abs_u8": 0.0889,
+  "device_swift_diff_max_abs_u8": 55,
+  "simulator_quirk_face_width_approx": 73,
+  "verdict": "PASS \u2014 device Swift Vision \u2248 Python/macOS (~226), not sim quirk (~73)"
+}

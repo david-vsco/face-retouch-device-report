@@ -1,9 +1,8 @@
-# Face retouch — physical iPhone results
+# Face retouch — physical device report
 
-Separate from the simulator/macOS compare report.
+Public GitHub Pages for classical face-retouch Vision compares on a USB **test iPhone 8** (Swift app + React Native / studio-next).
 
-**Goal:** Vision classical retouch on a physical iPhone — Swift app + React Native (studio-next) iOS app.
+- Live: https://david-vsco.github.io/face-retouch-device-report/live.html
+- Index: https://david-vsco.github.io/face-retouch-device-report/
 
-**Device:** test iPhone 88 (`iPhone10,4`), iOS 16.7.16, USB.
-
-Status: pending device runs (Developer Mode required on phone).
+TEMP PoC. No device UDIDs or personal names in published files.

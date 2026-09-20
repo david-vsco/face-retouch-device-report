@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "before": "assets/swift/before.png",
+    "mask_vision": "assets/swift/mask_vision.png",
+    "python": "assets/swift/python.png",
+    "strip": "assets/swift/strip.png",
+    "vision": "assets/swift/vision.png"
+  },
+  "reports": {
+    "vision": {
+      "detect_ms": 432.7,
+      "device": "test-iphone-8",
+      "diff_vs_python_golden": {
+        "max_abs_u8": 55,
+        "mean_abs_u8": 0.0889,
+        "pixels": 1151040
+      },
+      "face_width_px_min": 225.76803627259983,
+      "faces": 1,
+      "guided_eps": 0.004000000189989805,
+      "guided_radius": 4,
+      "landmarker": "vision",
+      "mask_refined_px": 43937,
+      "smooth": 0.6000000238418579,
+      "texture_retain": 0.800000011920929,
+      "timings_ms": {
+        "base_smoothed": 28889.7,
+        "frequency_separation": 25845.4,
+        "mask_coarse": 179.8,
+        "mask_refined": 12197.3,
+        "recombine": 1526.8
+      },
+      "total_ms": 68639,
+      "sample": "obama"
+    }
+  },
+  "meta": {
+    "label": "Swift Vision on test iPhone 8 (USB)",
+    "landmarker": "vision",
+    "no_mediapipe": true
+  }
+}

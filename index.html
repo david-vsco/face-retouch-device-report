@@ -7,14 +7,18 @@
 <style>
   :root { font-family: ui-sans-serif, system-ui, sans-serif; color: #14212b; background: #f6f3ee; }
   body { margin: 0; padding: 1.5rem; line-height: 1.45; }
-  main { max-width: 920px; margin: 0 auto; }
+  main { max-width: 960px; margin: 0 auto; }
   .badge { display: inline-block; font-size: 0.75rem; padding: 0.15rem 0.5rem; border-radius: 999px; background: #e8e0d4; margin-right: 0.35rem; }
-  .card { background: #fff; border-radius: 12px; padding: 1rem 1.15rem; margin: 1rem 0; box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+  .ok { background: #e8f6ee; }
   .warn { background: #fff6e8; border: 1px solid #f0d9a8; }
+  .card { background: #fff; border-radius: 12px; padding: 1rem 1.15rem; margin: 1rem 0; box-shadow: 0 1px 2px rgba(0,0,0,.06); }
   .muted { color: #5c6b76; font-size: 0.95rem; }
   table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
-  th, td { text-align: left; padding: 0.4rem 0.5rem; border-bottom: 1px solid #eee; }
+  th, td { text-align: left; padding: 0.45rem 0.5rem; border-bottom: 1px solid #eee; }
+  th { font-weight: 600; }
   code { font-size: 0.9em; }
+  img { max-width: 100%; height: auto; border-radius: 8px; margin-top: 0.5rem; }
+  .pass { color: #0a7a3e; font-weight: 600; }
 </style>
 </head>
 <body>
@@ -25,35 +29,52 @@
     <span class="badge">Vision only</span>
   </p>
   <h1>Classical face retouch on physical iPhone</h1>
-  <p class="muted">Separate from the <a href="https://david-vsco.github.io/face-retouch-poc-report/">simulator / macOS compare report</a>. This page will hold Swift app + React Native (studio-next) iOS app results from a USB iPhone 8.</p>
+  <p class="muted">Separate from the <a href="https://david-vsco.github.io/face-retouch-poc-report/">simulator / macOS compare report</a>. Swift + React Native (studio-next) Vision results from USB <strong>test iPhone 8</strong>.</p>
 
   <div class="card"><strong>Live progress</strong><p>Auto-refreshing checklist: <a href="live.html">live.html</a></p></div>
+
+  <div class="card ok">
+    <strong>Swift Vision on device — PASS</strong>
+    <p class="pass">face_width_px_min ≈ 225.77 (matches Python ~225.6 / macOS CLI ~226.07; simulator quirk was ~73).</p>
+    <p class="muted">faces=1 · detect_ms≈433 · total_ms≈68639 · diff vs Python golden mean_abs≈0.089 max 55</p>
+  </div>
+
   <div class="card warn">
-    <strong>Status: waiting on device runs</strong>
-    <p>Swift Vision smoke app is built and signed. React Native / studio-next worktree is patched with AppDelegate Vision smoke. Installs are blocked until <strong>Developer Mode</strong> is enabled on test iPhone 88 (Settings → Privacy &amp; Security → Developer Mode).</p>
+    <strong>RN / studio-next Vision on device — in progress</strong>
+    <p>Awaiting Mac Shell overnight runbook (build + install + Documents pull). Same geometry gate: face_width ≈ 226.</p>
   </div>
 
   <div class="card">
-    <strong>Plan</strong>
-    <ol>
-      <li><strong>Swift app</strong> — <code>FaceRetouchDeviceSmoke</code> on-device Vision → Documents artifacts</li>
-      <li><strong>RN iOS app</strong> — studio-next Debug with <code>FaceRetouchPoc</code> Vision smoke on the same phone</li>
-      <li>Publish metrics, strips, masks, and face_width vs Python (~226) / vs simulator (~73)</li>
-    </ol>
+    <strong>Obama — face_width_px_min</strong>
+    <table>
+      <thead><tr><th>Arm</th><th>face_width</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Python golden</td><td><code>225.6</code></td><td>reference</td></tr>
+        <tr><td>macOS CLI Vision</td><td><code>≈ 226.07</code></td><td>same Vision + ClassicalRetouchCore</td></tr>
+        <tr><td>Device Swift Vision (test iPhone 8)</td><td><code>225.77</code></td><td class="pass">PASS vs Python/macOS</td></tr>
+        <tr><td>Simulator Vision (historical)</td><td><code>≈ 73</code></td><td>CPU-only quirk — not a geometry gate</td></tr>
+        <tr><td>Device RN / studio-next Vision</td><td><code>—</code></td><td>pending overnight Mac run</td></tr>
+      </tbody>
+    </table>
   </div>
 
   <div class="card">
     <strong>Device</strong>
     <table>
-      <tr><th>Device</th><td>test iPhone 8 (USB)</td></tr>
-      <tr><th>Model</th><td>iPhone 8 (<code>iPhone10,4</code>)</td></tr>
-      <tr><th>iOS</th><td>16.7.16</td></tr>
-      <tr><th>Device</th><td><code>test iPhone 8 (USB)</code></td></tr>
+      <tr><th>Label</th><td>test iPhone 8 (USB)</td></tr>
+      <tr><th>Model</th><td>iPhone 8</td></tr>
+      <tr><th>iOS</th><td>16.7.x</td></tr>
       <tr><th>Landmarker</th><td>Apple Vision (no MediaPipe)</td></tr>
     </table>
   </div>
 
-  <footer class="muted">Will update when both physical runs complete · TEMP proof-of-concept · scaffold refreshed</footer>
+  <div class="card">
+    <strong>Swift device artifacts</strong>
+    <p class="muted"><a href="assets/swift/report.json">report.json</a> · <a href="assets/swift/metrics.json">metrics.json</a> · mask below (strip.png pending Mac copy)</p>
+    <img src="assets/swift/mask_vision.png" alt="Swift Vision skin mask on test iPhone 8 (obama)" />
+  </div>
+
+  <footer class="muted">TEMP proof-of-concept · updated overnight · no device IDs in this report</footer>
 </main>
 </body>
 </html>
