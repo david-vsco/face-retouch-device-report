@@ -1,8 +1,11 @@
 {
   "status": "DONE",
+  "verdict": "PASS",
   "device": "iPhone 16 Pro Max",
-  "python": 225.6,
-  "swift": 226.06705584763608,
-  "rn": 226.06705584763608,
-  "updated": "2026-09-20T21:40:00-07:00"
+  "sample": "obama",
+  "python_face_width_px_min": 225.6,
+  "swift_face_width_px_min": 226.06705584763608,
+  "rn_face_width_px_min": 226.06705584763608,
+  "updated": "2026-09-20T21:44:07-07:00",
+  "url": "https://david-vsco.github.io/face-retouch-device-report/"
 }

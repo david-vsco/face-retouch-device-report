@@ -1,9 +1,21 @@
 {
   "sample": "obama",
   "device": "iPhone 16 Pro Max",
+  "landmarker": "Apple Vision (Vision-only PoC)",
+  "apps": {
+    "swift": "FaceRetouchDeviceSmoke",
+    "rn": "VSCO Studio Pro (co.visualsupply.studionextdev) TEMP overlay"
+  },
   "python_face_width_px_min": 225.6,
   "swift_device_face_width_px_min": 226.06705584763608,
   "rn_device_face_width_px_min": 226.06705584763608,
-  "rn_status": "PASS \u2014 Studio Pro Vision smoke; report.json + strip.png on device",
-  "updated": "2026-09-20T21:40:00-07:00"
+  "swift_detect_ms": 239.4,
+  "rn_detect_ms": 128.3,
+  "swift_diff_vs_python_mean_abs_u8": 0.0875,
+  "swift_diff_vs_python_max_abs_u8": 54,
+  "rn_diff_vs_python_mean_abs_u8": 0.0875,
+  "rn_diff_vs_python_max_abs_u8": 54,
+  "verdict": "PASS \u2014 Swift and Studio Pro Vision match each other; both within ~0.5 px of Python face_width (225.6 \u2192 226.07). Pixel diff vs Python golden mean_abs_u8 \u2248 0.0875 (max 54) on both arms.",
+  "rn_status": "PASS \u2014 Studio Pro Vision smoke; report.json + strip + TEMP overlay on device",
+  "updated": "2026-09-20T21:44:07-07:00"
 }
