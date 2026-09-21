@@ -1,0 +1,35 @@
+{
+  "artifacts" : {
+    "before" : "\/var\/mobile\/Containers\/Data\/Application\/C9C8C8CB-69E5-48F3-9117-540A8C43F65E\/Documents\/face-retouch-poc\/out\/obama\/before.png",
+    "mask_vision" : "\/var\/mobile\/Containers\/Data\/Application\/C9C8C8CB-69E5-48F3-9117-540A8C43F65E\/Documents\/face-retouch-poc\/out\/obama\/mask_vision.png",
+    "python" : "\/var\/mobile\/Containers\/Data\/Application\/C9C8C8CB-69E5-48F3-9117-540A8C43F65E\/Documents\/face-retouch-poc\/out\/obama\/python.png",
+    "strip" : "\/var\/mobile\/Containers\/Data\/Application\/C9C8C8CB-69E5-48F3-9117-540A8C43F65E\/Documents\/face-retouch-poc\/out\/obama\/strip.png",
+    "vision" : "\/var\/mobile\/Containers\/Data\/Application\/C9C8C8CB-69E5-48F3-9117-540A8C43F65E\/Documents\/face-retouch-poc\/out\/obama\/vision.png"
+  },
+  "reports" : {
+    "vision" : {
+      "detect_ms" : 128.30000000000001,
+      "diff_vs_python_golden" : {
+        "max_abs_u8" : 54,
+        "mean_abs_u8" : 0.087499999999999994,
+        "pixels" : 1151040
+      },
+      "face_width_px_min" : 226.06705584763608,
+      "faces" : 1,
+      "guided_eps" : 0.0040000001899898052,
+      "guided_radius" : 4,
+      "landmarker" : "vision",
+      "mask_refined_px" : 43855,
+      "smooth" : 0.60000002384185791,
+      "texture_retain" : 0.80000001192092896,
+      "timings_ms" : {
+        "base_smoothed" : 123.40000000000001,
+        "frequency_separation" : 132.69999999999999,
+        "mask_coarse" : 3.3999999999999999,
+        "mask_refined" : 77.299999999999997,
+        "recombine" : 2.6000000000000001
+      },
+      "total_ms" : 339.39999999999998
+    }
+  }
+}

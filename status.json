@@ -1,25 +1,8 @@
 {
-  "schema": 1,
-  "summary": "Obama device compare: Python 225.6 \u00b7 Swift 225.77 \u00b7 RN None",
-  "status": "done",
-  "updated_at": "2026-09-20T20:13:52Z",
-  "urls": {
-    "index": "https://david-vsco.github.io/face-retouch-device-report/",
-    "live": "https://david-vsco.github.io/face-retouch-device-report/live.html"
-  },
-  "metrics": {
-    "sample": "obama",
-    "python_face_width_px_min": 225.6,
-    "swift_device_vision_face_width_px_min": 225.77,
-    "rn_device_vision_face_width_px_min": null,
-    "swift_diff_vs_python": {
-      "max_abs_u8": 55,
-      "mean_abs_u8": 0.0889,
-      "pixels": 1151040
-    },
-    "rn_diff_vs_python": null,
-    "rn_note": "RN Documents/out/obama never wrote report.json this AFK run (inputs only); videos recorded of on-device UI",
-    "verdict": "device Vision compare \u2014 Python vs Swift vs RN",
-    "updated": "2026-09-20T20:13:52Z"
-  }
+  "status": "DONE",
+  "device": "iPhone 16 Pro Max",
+  "python": 225.6,
+  "swift": 226.06705584763608,
+  "rn": 226.06705584763608,
+  "updated": "2026-09-20T21:40:00-07:00"
 }

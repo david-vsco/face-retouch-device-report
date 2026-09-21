@@ -1,0 +1,36 @@
+{
+  "artifacts" : {
+    "before" : "\/var\/mobile\/Containers\/Data\/Application\/6F37F619-BAE0-4A67-837B-319C456D2D69\/Documents\/face-retouch-device-smoke\/obama\/before.png",
+    "mask_vision" : "\/var\/mobile\/Containers\/Data\/Application\/6F37F619-BAE0-4A67-837B-319C456D2D69\/Documents\/face-retouch-device-smoke\/obama\/mask_vision.png",
+    "python" : "\/var\/mobile\/Containers\/Data\/Application\/6F37F619-BAE0-4A67-837B-319C456D2D69\/Documents\/face-retouch-device-smoke\/obama\/python.png",
+    "strip" : "\/var\/mobile\/Containers\/Data\/Application\/6F37F619-BAE0-4A67-837B-319C456D2D69\/Documents\/face-retouch-device-smoke\/obama\/strip.png",
+    "vision" : "\/var\/mobile\/Containers\/Data\/Application\/6F37F619-BAE0-4A67-837B-319C456D2D69\/Documents\/face-retouch-device-smoke\/obama\/vision.png"
+  },
+  "reports" : {
+    "vision" : {
+      "detect_ms" : 239.40000000000001,
+      "device" : "iphone8-physical",
+      "diff_vs_python_golden" : {
+        "max_abs_u8" : 54,
+        "mean_abs_u8" : 0.087499999999999994,
+        "pixels" : 1151040
+      },
+      "face_width_px_min" : 226.06705584763608,
+      "faces" : 1,
+      "guided_eps" : 0.0040000001899898052,
+      "guided_radius" : 4,
+      "landmarker" : "vision",
+      "mask_refined_px" : 43855,
+      "smooth" : 0.60000002384185791,
+      "texture_retain" : 0.80000001192092896,
+      "timings_ms" : {
+        "base_smoothed" : 6431.5,
+        "frequency_separation" : 5796.8000000000002,
+        "mask_coarse" : 90.5,
+        "mask_refined" : 2678.5,
+        "recombine" : 324.30000000000001
+      },
+      "total_ms" : 15321.6
+    }
+  }
+}
