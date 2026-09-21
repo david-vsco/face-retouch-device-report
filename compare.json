@@ -1,0 +1,14 @@
+{
+  "sample": "obama",
+  "python_face_width_px_min": 225.6,
+  "swift_device_face_width_px_min": 225.768,
+  "rn_device_face_width_px_min": null,
+  "videos": {
+    "swift_device": "assets/videos/swift-obama-DEVICE.mp4",
+    "swift_proof": "assets/videos/swift-obama-PROOF.mp4",
+    "rn_device": null,
+    "rn_proof": null
+  },
+  "rn_status": "FAIL",
+  "updated": "2026-09-20T22:47:36Z"
+}

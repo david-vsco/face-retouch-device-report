@@ -1,37 +1,14 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Face retouch — device compare</title>
-<style>
-body{font-family:system-ui,sans-serif;margin:1.25rem;background:#f6f3ee;color:#14212b;line-height:1.45}
-.card{background:#fff;border-radius:12px;padding:1rem 1.15rem;margin:1rem 0;box-shadow:0 1px 2px rgba(0,0,0,.06)}
-.ok{background:#e8f6ee;border:1px solid #b7e0c4}
-.warn{background:#fff6e8;border:1px solid #f0d9a8}
-table{width:100%;border-collapse:collapse} th,td{padding:.45rem;border-bottom:1px solid #eee;text-align:left}
-img,video{max-width:100%;border-radius:8px}
-.badge{display:inline-block;background:#e8e0d4;border-radius:999px;padding:.15rem .55rem;font-size:.75rem;margin-right:.35rem}
-</style></head><body>
-<main style="max-width:860px;margin:0 auto">
-<p><span class="badge">device</span><span class="badge">obama</span><span class="badge">Vision-only</span></p>
-<h1>Face retouch — Python vs Swift vs RN</h1>
-<div class="card ok"><strong>Executive summary</strong>
-<p>Physical test iPhone 8 · classical Vision retouch · sample <code>obama</code>.</p>
-<table>
-<tr><th>Arm</th><th>face_width_px_min</th></tr>
-<tr><td>Python golden</td><td><strong>225.6</strong></td></tr>
-<tr><td>Swift FaceRetouchDeviceSmoke</td><td><strong>225.77</strong></td></tr>
-<tr><td>RN / studio-next FaceRetouchPoc</td><td><strong>n/a (no report.json)</strong></td></tr>
-</table>
-<p>Updated <code>2026-09-20T20:13:52Z</code></p>
-</div>
-<div class="card warn"><strong>RN note</strong>
-<p>RN Documents never wrote <code>out/obama/report.json</code> this AFK run (only inputs). Both Mac-recorded labeled results videos are below.</p></div>
-<div class="card"><h2>Swift strip</h2>
-<p><img src="assets/swift/strip.png" alt="Swift strip"/></p></div>
-<div class="card"><h2>RN strip</h2>
-<p><img src="assets/rn/strip.png" alt="RN strip"/></p></div>
-<div class="card"><h2>Swift video</h2>
-<video controls src="assets/videos/swift-obama-results.mp4"></video></div>
-<div class="card"><h2>RN video</h2>
-<video controls src="assets/videos/rn-obama-results.mp4"></video></div>
-<p><a href="live.html">live.html</a> · <a href="assets/compare.json">compare.json</a></p>
-</main></body></html>
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
+<title>Face-retouch device compare</title>
+<style>body{font-family:system-ui;margin:1.5rem;max-width:960px;background:#f6f3ee;color:#14212b}
+.card{background:#fff;border-radius:12px;padding:1rem;margin:1rem 0} table{width:100%;border-collapse:collapse}
+th,td{border-bottom:1px solid #e8e0d4;padding:.5rem;text-align:left} img,video{max-width:100%}</style></head><body>
+<h1>Face-retouch — device compare</h1>
+<p>Obama · Vision · iPhone 16 Pro Max · 2026-09-21T03:34:33Z</p>
+<div class=card><h2>face_width_px_min</h2>
+<table><tr><th>Python</th><th>Swift</th><th>React Native (Studio Pro)</th></tr>
+<tr><td>225.6</td><td>226.07</td><td>—</td></tr></table>
+<p>RN: FAIL — Studio Pro installed; smoke never produced report.json (TEMP overlay not observed)</p></div>
+<div class=card><h2>Swift strip</h2><img src="assets/images/swift-strip.png" alt="swift strip"></div>
+<div class=card><h2>Swift DEVICE (in-app)</h2><video controls src="assets/videos/swift-obama-DEVICE.mp4"></video></div>
+</body></html>
